@@ -9,9 +9,9 @@ public class string {
 // String name=sc.nextLine();
 String name="ROHIT;.hi";
 
-// System.out.println(name.length());
+System.out.println(name.length());
 // System.out.println(name.charAt(2));
-System.out.println(name.replace(";", ""));
+
 
 
     }
