@@ -10,7 +10,7 @@ public class compression {
 
         for(int i=0;i<a.length();i++){
 
-            cnt=1;
+            cnt=1; 
             while(i<a.length()-1&&a.charAt(i)==a.charAt(i+1)){
                 cnt++;
                 i++;
