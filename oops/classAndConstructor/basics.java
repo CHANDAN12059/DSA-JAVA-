@@ -1,4 +1,4 @@
-package oops;
+package oops.classAndConstructor;
 
 class Pen{
 private String color;
@@ -17,7 +17,7 @@ return this.color;
 public class basics {
     public static void main(String[] args) {
         Pen a=new Pen();
-        a.setColor("greens");
+        a.setColor("green");
        System.out.println(a.getColor()); 
         
 
