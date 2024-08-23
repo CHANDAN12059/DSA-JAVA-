@@ -29,7 +29,7 @@ return true;
 }
 
 
-    public static void nqueen(char board[] [],int row){
+    public static void nqueens(char board[] [],int row){
 
 if(row==board.length){
     print(board);
@@ -39,7 +39,7 @@ if(row==board.length){
         for(int i=0;i<board.length;i++){
             if(isSafe(board,row,i)){
             board[row][i]='q';
-            nqueen(board, row+1);
+            nqueens(board, row+1);
             board[row][i]='.';
         }
 
@@ -64,7 +64,7 @@ if(row==board.length){
             board[i][j]='.';
         }
     }
-    nqueen(board,0);
+    nqueens(board,0);
     
 
 
