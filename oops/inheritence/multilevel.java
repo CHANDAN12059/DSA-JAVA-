@@ -11,7 +11,7 @@ class Animal {
     }
 }
 
-class Fish extends Animal {
+class Frog extends Animal {
 
     public void swim() {
         System.out.println("swimming");
@@ -20,7 +20,7 @@ class Fish extends Animal {
 }
 
 
-class Dog extends Fish{
+class Dog extends Frog{
 
 public void bark(){
     System.out.println("barking");
