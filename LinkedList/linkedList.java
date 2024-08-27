@@ -96,6 +96,110 @@ public class linkedList {
 
     }
 
+    public int search(int num) {
+        int i = 0;
+        Node temp = head;
+        while (temp != null) {
+            if (temp.data == num) {
+                return i;
+            }
+            i++;
+            temp = temp.next;
+
+        }
+
+        return -1;
+
+    }
+
+    public void reverse() {
+
+        Node prev = null;
+        Node curr = tail = head;
+        Node next;
+
+        while (curr != null) {
+            next = curr.next;
+            curr.next = prev;
+            prev = curr;
+            curr = next;
+        }
+        head = prev;
+
+    }
+
+    public void removeNodeFromEnd(int n) {
+
+        int sz = 0;
+        Node temp = head;
+        while (temp != null) {
+            temp = temp.next;
+            sz++;
+        }
+
+        if (sz == n) {
+            head = head.next;
+            return;
+        }
+
+        Node prev = head;
+        int i = 1;
+        while (i < sz - n) {
+            prev = prev.next;
+            i++;
+        }
+
+        prev.next = prev.next.next;
+
+    }
+
+    public Node mid() {
+        Node slow = head;
+        Node fast = head;
+
+        while (fast != null && fast.next != null) {
+            slow = slow.next;
+            fast = fast.next.next;
+        }
+        return slow;
+
+    }
+
+    public boolean palindrome() {
+
+        if (head == null || head.next == null) {
+            return true;
+        }
+        Node midElement = mid();
+
+        Node prev = null;
+        Node curr = midElement;
+        Node next;
+
+        while (curr != null) {
+            next = curr.next;
+            curr.next = prev;
+            prev = curr;
+            curr = next;
+        }
+        Node rightHead = prev;
+        Node leftHead = head;
+
+        while (rightHead != null) {
+
+            if (leftHead.data != rightHead.data) {
+                return false;
+
+            }
+            leftHead = leftHead.next;
+            rightHead = rightHead.next;
+
+        }
+
+        return true;
+
+    }
+
     public void print() {
         if (head == null) {
             System.out.println("Empty linkedList");
@@ -114,12 +218,21 @@ public class linkedList {
 
     public static void main(String[] args) {
         linkedList ll = new linkedList();
+        ll.addFirst(2);
+        ll.addFirst(1);
         ll.addFirst(1);
         ll.addFirst(2);
-        ll.addLast(10);
-        ll.addMiddle(300, 2);
-        ll.removeLast();
+        // ll.addLast(1);
+        // ll.addMiddle(300, 2);
+        // ll.removeLast();
         ll.print();
-        System.out.println(ll.size);
+        // ll.reverse();
+        // ll.print();
+        ll.removeNodeFromEnd(3);
+        System.out.println(ll.palindrome());
+        ll.print();
+
+        // System.out.println("Element found at index = " + ll.search(1));
+        // System.out.println(ll.size);
     }
 }
