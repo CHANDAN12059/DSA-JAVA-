@@ -310,45 +310,43 @@ public class linkedList {
 
     }
 
-public void zigZagll(){
-    Node slow=head;
-    Node fast=head;
+    public void zigZagll() {
+        Node slow = head;
+        Node fast = head;
 
-    while(fast!=null&&fast.next!=null){
-        slow=slow.next;
-        fast=fast.next.next;
+        while (fast != null && fast.next != null) {
+            slow = slow.next;
+            fast = fast.next.next;
+        }
+        Node mid = slow;
+
+        Node prev = null;
+        Node curr = mid.next;
+        mid.next = null;
+        Node next;
+
+        while (curr != null) {
+            next = curr.next;
+            curr.next = prev;
+            prev = curr;
+            curr = next;
+        }
+        Node left = head;
+        Node right = prev;
+        Node nextLeft, nextRight;
+
+        while (left != null && right != null) {
+            nextLeft = left.next;
+            left.next = right;
+            nextRight = right.next;
+            right.next = nextLeft;
+
+            left = nextLeft;
+            right = nextRight;
+
+        }
+
     }
-    Node mid=slow;
-
-    Node prev=null;
-    Node curr=mid.next;
-    mid.next=null;
-    Node next;
-
-    while(curr!=null){
-        next=curr.next;
-        curr.next=prev;
-        prev=curr;
-        curr=next;
-    }
-    Node left=head;
-    Node right=prev;
-    Node nextLeft,nextRight;
-
-    while(left!=null&&right!=null){
-        nextLeft=left.next;
-        left.next=right;
-        nextRight=right.next;
-        right.next=nextLeft;
-
-        left=nextLeft;
-        right=nextRight;
-
-    }
-
-
-
-}
 
     public void print() {
         if (head == null) {
