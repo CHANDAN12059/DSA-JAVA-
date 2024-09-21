@@ -57,9 +57,9 @@ public class stackUsingTwoQueue {
 
         public int peek() {
 
-if(isEmpty()){
-    return -1;
-}
+            if (isEmpty()) {
+                return -1;
+            }
 
             int top = -1;
             if (!q1.isEmpty()) {
@@ -67,7 +67,6 @@ if(isEmpty()){
                 while (!q1.isEmpty()) {
                     top = q1.remove();
                     q2.add(top);
-
 
                 }
 
@@ -88,17 +87,15 @@ if(isEmpty()){
     }
 
     public static void main(String[] args) {
-        Stack s=new Stack();
+        Stack s = new Stack();
         s.push(1);
         s.push(2);
         s.push(3);
 
-        while(!s.isEmpty()){
+        while (!s.isEmpty()) {
             System.out.println(s.peek());
             s.pop();
         }
-
-
 
     }
 }
