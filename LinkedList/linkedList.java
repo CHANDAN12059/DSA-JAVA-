@@ -226,9 +226,9 @@ public class linkedList {
             slow = slow.next;
             fast = fast.next.next;
 
-            if (slow == fast) {
-                cycle = true;
-                break;
+                if (slow == fast) {
+                    cycle = true;
+                    break;
 
             }
         }
@@ -374,9 +374,10 @@ public class linkedList {
         // ll.addMiddle(300, 2);
         // ll.removeLast();
         ll.print();
+        System.out.println(ll.mid().data);
         // head = ll.mergeSort(head);
-        ll.zigZagll();
-        ll.print();
+        // ll.zigZagll();
+        // ll.print();
         // ll.reverse();
         // ll.print();
         // ll.removeNodeFromEnd(3);
