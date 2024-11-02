@@ -1,33 +1,33 @@
-package oops.inheritence;
+// package oops.inheritence;
 
 
-class Animal {
+// class Animal {
 
-    public void eat() {
-        System.out.println("eating");
-    }
+//     public void eat() {
+//         System.out.println("eating");
+//     }
 
-    public void breathe() {
-        System.out.println("breathing");
-    }
-}
+//     public void breathe() {
+//         System.out.println("breathing");
+//     }
+// }
 
-class Fish extends Animal {
+// class Fish extends Animal {
 
-    public void swim() {
-        System.out.println("swimming");
-    }
+//     public void swim() {
+//         System.out.println("swimming");
+//     }
 
-}
+// }
 
 
 
-public class single {
-    public static void main(String[] args) {
-        Fish fish=new Fish();
-        fish.eat();
-    }
-}
+// public class single {
+//     public static void main(String[] args) {
+//         Fish fish=new Fish();
+//         fish.eat();
+//     }
+// }
 
 
 

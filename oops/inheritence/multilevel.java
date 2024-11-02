@@ -1,40 +1,40 @@
-package oops.inheritence;
+// package oops.inheritence;
 
-class Animal {
+// class Animal {
 
-    public void eat() {
-        System.out.println("eating");
-    }
+//     public void eat() {
+//         System.out.println("eating");
+//     }
 
-    public void breathe() {
-        System.out.println("breathing");
-    }
-}
+//     public void breathe() {
+//         System.out.println("breathing");
+//     }
+// }
 
-class Frog extends Animal {
+// class Frog extends Animal {
 
-    public void swim() {
-        System.out.println("swimming");
-    }
+//     public void swim() {
+//         System.out.println("swimming");
+//     }
 
-}
-
-
-class Dog extends Frog{
-
-public void bark(){
-    System.out.println("barking");
-}
+// }
 
 
-}
+// class Dog extends Frog{
 
-public class multilevel {
-    public static void main(String[] args) {
+// public void bark(){
+//     System.out.println("barking");
+// }
+
+
+// }
+
+// public class multilevel {
+//     public static void main(String[] args) {
 
       
-        Dog dog=new Dog();
-        dog.eat();
+//         Dog dog=new Dog();
+//         dog.eat();
 
-    }
-}
+//     }
+// }
