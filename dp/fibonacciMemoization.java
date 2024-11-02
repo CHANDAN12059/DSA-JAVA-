@@ -22,6 +22,7 @@ return arr[n];
         int n=sc.nextInt();
         int arr[]=new int[n+1];
     System.out.println(fibo(n,arr));
+    sc.close();
 
     }
 }

@@ -23,7 +23,7 @@ return arr[n];
       
 
 
-
+sc.close();
 
     }
 }
