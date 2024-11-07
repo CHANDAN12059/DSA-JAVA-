@@ -3,7 +3,7 @@ package string;
 public class compression {
     public static void main(String[] args) {
         
-        String a="aabbcccdddd";
+        String a="GEEKSFORGEEKS";
         String newString="";
         Integer cnt;
 

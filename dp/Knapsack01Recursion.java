@@ -1,6 +1,6 @@
 package dp;
 
-public class Knapsack01 {
+public class Knapsack01Recursion {
     public static int max(int[] val,int[] wt,int capacity,int i){
 
 
