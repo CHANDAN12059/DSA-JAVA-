@@ -1,21 +1,24 @@
 package recursion;
+
 public class factorial {
 
-public static int print(int n){
+    public static int print( int x, int n) {
+    
 if(n==0){
     return 1;
 }
-int fn=n*print(n-1);
-return fn;
 
 
-}
+int even=x*print(x,n-1);
 
+return ans;
+
+    }
 
     public static void main(String[] args) {
+
         
-int num=5;
-System.out.println(print(num));
+        System.out.println(print(2,3));
 
     }
 }

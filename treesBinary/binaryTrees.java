@@ -1,8 +1,8 @@
-package trees;
+package treesBinary;
 
 import java.util.*;
 
-public class PreorderTree {
+public class binaryTrees {
     public static class Node {
 
         int data;
