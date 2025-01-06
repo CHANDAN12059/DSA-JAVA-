@@ -11,7 +11,7 @@ if(n==0){
 
 int even=x*print(x,n-1);
 
-return ans;
+return even;
 
     }
 

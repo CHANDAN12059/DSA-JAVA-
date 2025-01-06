@@ -11,6 +11,7 @@ public class fractionalKnapsack {
         int capacity=w;
         int finalValue=0;
 
+
         double ratio[][]=new double[val.length][2];
 
         for(int i=0;i<val.length;i++){
